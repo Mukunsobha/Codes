@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.Scanner;
+
+class prime
+{ public static void main(String Ar[])
+{ int a=0,i,j;
+System.out.println("Enter a number");
+Scanner s=new Scanner(System.in);
+a=s.nextInt();
+for(j=a+1;;j++)
+{ for(i=2;i<j;i++)
+{ if(j%i==0)
+break;
+}
+if(i==j)
+{
+    System.out.println("The next prime no is:"+j);
+break;
+}
+}
+}
+}
